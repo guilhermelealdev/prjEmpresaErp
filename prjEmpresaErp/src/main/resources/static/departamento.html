@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP</title>
+</head>
+
+<body>
+    <div class="w3-container">
+        <h1>Empresa XPTO</h1>
+    </div>
+
+	<div class="w3-bar w3-black">
+	       <a href="index.html" class="w3-bar-item w3-button">Home</a>
+	       <a href="departamento.html" class="w3-bar-item w3-button">Departamento</a>
+	       <a href="funcionario.html" class="w3-bar-item w3-button">Funcionario</a>
+	   </div>
+    <div class="central">
+        <div id="cadastro">
+            <h2>Cadastro de Setores</h2>
+            <form id="cadastroForm">
+                <label for="depnome">Nome do Setor:</label>
+                <input type="text" id="depnome" name="depnome" required><br>
+
+                <button type="button" onclick="cadastrarDepartamento(event)">Cadastrar</button>
+                <button type="button" onclick="pesquisardep()">Pesquisar</button>
+            </form>
+
+            <h2>Lista de Setores</h2><br>
+            <main>
+                <table class="blueTable" id="departamento-tabela">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome do Setor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- dados inseridos por JS -->
+                    </tbody>
+                </table>
+            </main>			   
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP</title>
+
+</head>
+
+<body>
+
+    <div class="w3-container">
+        <h1>Empresa XPTO</h1>
+    </div>
+
+	<div class="w3-bar w3-black">
+	       <a href="index.html" class="w3-bar-item w3-button">Home</a>
+	       <a href="departamento.html" class="w3-bar-item w3-button">Departamento</a>
+	       <a href="funcionario.html" class="w3-bar-item w3-button">Funcionario</a>
+	   </div>
+    <div class="central">
+        <div id="cadastro">
+            <form id="cadastroForm">
+                <label for="nomefunc">Nome:</label>
+                <input type="text" id="nomefunc" name="nomefunc" required>
+
+                <label for="salario">Salário R$:</label>
+                <input type="number" id="salario" name="salario" step="0.01" required>
+
+                <label for="idsetor">ID do Setor:</label>
+                <input type="number" id="idsetor" name="idsetor" required>
+
+                <button type="button" onclick="cadastrarFuncionario()">Cadastrar</button>
+            </form>
+
+            <h2>Lista de Funcionários</h2>
+            <input type="text" id="searchNome" placeholder="Pesquisar por nome">
+            <button type="button" onclick="pesquisarFuncionario()">Pesquisar</button>
+
+            <table id="funcionarios-tabela" class="blueTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Salário</th>
+                        <th>Setor</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
