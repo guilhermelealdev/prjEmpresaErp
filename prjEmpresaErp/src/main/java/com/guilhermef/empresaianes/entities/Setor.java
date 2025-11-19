@@ -14,11 +14,11 @@ public class Setor {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idSetor;
 
-	private String nome;
+	private String nomeSetor;
 
-	public Setor(Long idSetor, String nome) {
+	public Setor(Long idSetor, String nomeSetor) {
 		this.idSetor = idSetor;
-		this.nome = nome;
+		this.nomeSetor = nomeSetor;
 	}
 
 	public Setor() {
@@ -34,11 +34,11 @@ public class Setor {
 	}
 
 	public String getNomeSetor() {
-		return nome;
+		return nomeSetor;
 	}
 
-	public void setNomeSetor(String nome) {
-		this.nome = nome;
+	public void setNomeSetor(String nomeSetor) {
+		this.nomeSetor = nomeSetor;
 	}
 
 }
