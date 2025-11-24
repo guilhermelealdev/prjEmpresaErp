@@ -7,14 +7,21 @@ async function cadastrarSetores(event) {
 	try {
 
 		const resposta = await fetch(`${Api}/setor/salvar`,{
+			
 			method:"POST",
-			headers:{"Content-type":"aplication.json"},
+			headers:{"Content-type":"application/json"},
 			body:JSON.stringify({nomeSetor:nomeSetor})
+			
 		});
+		
 		if(!resposta.ok) throw new Error(resposta.status);
+		
 		alert("CADASTRADO COM SUCESSO!")
+		
 		document.getElementById("cadastroForm")
+		
 	} catch (err) {
+		
 		alert("ERRO AO CADASTRAR");
 		console.error(err)
 	}
