@@ -16,6 +16,7 @@ body{
     gap: 60px;
     background-color: rgba(231, 231, 255, 0.8);
     padding: 2px;
+    padding-top: 7px;
 
 }
 .opcao{
@@ -72,4 +73,10 @@ h2{
     padding: 1px 100px ;
     background-color: rgb(150, 150, 207);
     margin: 0;
+}
+#deco3{
+    padding: 1px 200px ;
+    background-color: rgb(139, 143, 255);
+    margin: 0;
+    box-shadow: 0 0 300px rgba(139, 143, 255 1)
 }
