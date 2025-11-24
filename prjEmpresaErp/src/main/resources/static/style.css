@@ -23,6 +23,7 @@ body{
    background-color: rgb(150, 150, 207);
    padding: 7.5px 100px;
    border-radius: 15px;
+   margin-bottom: 5px;
 }
 .opcao:hover{
     filter: brightness(1.2);
