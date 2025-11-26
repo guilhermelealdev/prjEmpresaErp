@@ -36,7 +36,7 @@ async function cadastrarFuncionario() {
 		const resposta = await fetch(`${Api}/funcionario/salvar`, {
 			method: "POST",
 			headers: { "Content-type": "application/json" },
-			body: JSON.stringify({ nomeFuncionario, salario, idSetor})
+			body: JSON.stringify({ nomeFuncionario, salario, idSetor })
 		});
 		if (!resposta.ok) throw new Error(resposta.status);
 		alert("FUNCIONARIO CADASTRADO COM SUCESSO!");

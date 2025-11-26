@@ -15,7 +15,7 @@ body{
     align-items: center;
     gap: 60px;
     background-color: rgba(231, 231, 255, 0.8);
-    padding: 2px;
+    padding: 4px;
     padding-top: 7px;
 
 }
@@ -24,13 +24,18 @@ body{
    padding: 7.5px 100px;
    border-radius: 15px;
    margin-bottom: 5px;
+   transition: 0.5s;
 }
 .opcao:hover{
-    filter: brightness(1.2);
+    transform: scale(1.05);
+    filter: brightness(1.1);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
 }
 a{
     text-decoration: none;
     color: white;
+    font-weight: bolder;
 }
 .menu{
     background-color: rgb(0, 0, 0);
@@ -48,9 +53,15 @@ h1{
     margin-left: 100px;
     margin-right: 100px;
     padding-bottom: 10px;
+    transition: 0.5s;
 }
 .texto:hover{
-    background-color: rgb(150, 150, 207)
+    transform: scale(1.1);
+    background-color: rgb(150, 150, 207);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    box-shadow: 0px 0px 20px rgb(150, 150, 207, 0.9);
+
 }
 .texto2{
     background-color: rgba(0, 0, 0, 0.7);
@@ -58,9 +69,14 @@ h1{
     margin-left: 100px;
     margin-right: 100px;
     padding-bottom: 10px;
+    transition: 0.5s;
 }
 .texto2:hover{
-    background-color: rgba(0, 0, 0, 1)
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 1);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9)
 }
 #deco{
     padding: 1px 100px ;
@@ -80,4 +96,67 @@ h2{
     background-color: rgb(139, 143, 255);
     margin: 0;
     box-shadow: 0 0 300px rgba(139, 143, 255 1)
+}
+
+.central{
+    background-color: rgba(0, 0, 0, 0.745);
+    margin: 50px 150px;
+    border-radius: 15px;
+    height: 100vh;
+}
+
+label{
+    font-size: 15px;
+    margin: 0;
+    background-color: rgb(139, 143, 255);
+    padding:10px 20px;
+    border-radius: 15px;
+}
+input{
+    padding: 10px 90px;
+    border-radius: 15px;
+    
+}
+h3{
+    background-color: rgb(139, 143, 255);
+    margin: 0;
+    margin-top: 15px;
+}
+.categoriaSetor{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 15px 275px;
+    background-color: rgb(139, 143, 255);
+    margin: 0;
+}
+tr{
+    background-color: white;
+}
+table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botaoSetor{
+    padding: 10px 54px;
+    background-color: black;
+    font-weight: bolder;
+    border-radius: 8px;
+    border: 3px solid white;
+    color: white;
+    border-top: 0px solid;
+    margin: 5px;
+    transition: 0.5s;
+}
+.botaoSetor:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+    border: 4px solid white;
+    cursor:pointer
+}
+.nomeFuncionario{
+    padding-left: 45px;
+    padding-right: 45px;
+}
 }
