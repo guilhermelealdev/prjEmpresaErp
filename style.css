@@ -1,0 +1,57 @@
+body{
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: beige;
+    color: rgb(255, 255, 255);
+    background-image: url(https://img.freepik.com/vetores-gratis/fundo-com-padrao-de-pata-desenhado-a-mao_23-2151138815.jpg?semt=ais_hybrid&w=740&q=80);
+    margin: 0;
+}
+#interacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: brown;
+    margin: 0px 300px;
+    border-end-end-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#imagesContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-image: url(https://media.istockphoto.com/id/1388281684/pt/vetorial/seamless-dog-pattern-with-paw-prints-bones-hearts-and-balls-cat-foot-texture-pattern-with.jpg?s=612x612&w=0&k=20&c=EGf8iBkiSWfeQAGCJuP-79L35sYlDWn4t_O7Y-2yt0I=);
+    background-color: white;
+    margin: 10px 150px;
+    border-radius: 35px;
+    color: black;
+    text-align: center;
+}
+button{
+    padding: 35px 100px;
+    border-radius: 15px;
+}
+img{
+    border-radius: 15px;
+    margin: 15px;
+    max-width: 300px;
+    border-width: 200px;
+    background-color: brown;
+    background-size: 500px;
+    border: solid brown 4px;
+}
+select{
+    padding: 5px 50px;
+}
+h1{
+    background-color: brown;
+    margin: 0px 300px;
+
+}
+#selecao{
+    background-color: brown;
+}
+text{
+    text-align: center;
+}
