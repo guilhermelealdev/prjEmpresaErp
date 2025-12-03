@@ -11,6 +11,8 @@ body{
 }
 .barraInicial {
     display: flex;
+    position: sticky;
+    top: 0;
     justify-content: center;
     align-items: center;
     gap: 60px;
@@ -105,6 +107,8 @@ h2{
     margin: 0;
 }
 #deco3{
+    position: sticky;
+    top: 0;
     padding: 1px 200px ;
     background-color: rgb(139, 143, 255);
     margin: 0;
@@ -131,9 +135,11 @@ input{
     
 }
 h3{
-    background-color: rgb(139, 143, 255);
+    background-color: rgb(0, 0, 0);
     margin: 0;
     margin-top: 15px;
+    border: solid white 1px;
+    border-bottom-width: 0px;
 }
 .categoriaSetor{
     text-align: center;
@@ -152,11 +158,10 @@ table{
 }
 .botaoSetor{
     padding: 10px 54px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(139, 143, 255);
+    color: white;
     font-weight: bolder;
     border-radius: 8px;
-    border: 3px solid white;
-    color: rgb(0, 0, 0);
     border-top: 0px solid;
     margin: 5px;
     transition: 0.2s;
@@ -175,7 +180,8 @@ table{
 }
 button{
     padding: 10px 54px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(139, 143, 255);
+    color: white;
     font-weight: bolder;
     border-radius: 8px;
     border-top: 0px solid;
