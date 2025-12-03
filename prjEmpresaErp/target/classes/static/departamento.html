@@ -3,37 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ERP</title>
+    <title>IANES - Setores</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="w3-container">
-        <h1>Empresa XPTO</h1>
+    
+    <div class="menu">
+        <h1><strong>IANES</strong></h1>
+    </div>
+    <div id="deco3"></div>
+    <div class="barraInicial">
+        <div class="opcao"><a href="index.html" class="w3-bar-item w3-button"><strong>HOME</strong></a></div>
+        <div class="opcao"><a href="departamento.html" class="w3-bar-item w3-button"><strong>SETOR</strong></a>
+        </div>
+        <div class="opcao"><a href="funcionario.html" class="w3-bar-item w3-button"><strong>FUNCIONARIO</strong></a>
+        </div>
     </div>
 
-	<div class="w3-bar w3-black">
-	       <a href="index.html" class="w3-bar-item w3-button">Home</a>
-	       <a href="departamento.html" class="w3-bar-item w3-button">Departamento</a>
-	       <a href="funcionario.html" class="w3-bar-item w3-button">Funcionario</a>
-	   </div>
     <div class="central">
         <div id="cadastro">
-            <h2>Cadastro de Setores</h2>
-            <form id="cadastroForm">
-                <label for="nomeSetor">Nome do Setor:</label>
-                <input type="text" id="nomeSetor" name="nomeSetor" required><br>
 
-                <button type="button" onclick="cadastrarSetores(event)">Cadastrar</button>
-                <button type="button" onclick="pesquisardep()">Pesquisar</button>
+            <h2>CADASTRO DE SETOR</h2>
+            <hr color="white">
+            <br>
+
+            <form id="cadastroForm">
+
+                <label for="nomeSetor"><strong> NOME DO SETOR:</strong></label>
+                <input type="text" id="nomeSetor" name="nomeSetor" required class="nomeSetor">
+                <br><br>
+
+                <button class="botaoSetor"type="button" onclick="cadastrarSetores(event)"><strong>CADASTRAR</strong></button>
+                <button class="botaoSetor"type="button" onclick="pesquisardep()"><strong>PESQUISAR</strong></button>
+
             </form>
 
-            <h2>Lista de Setores</h2><br>
+            <h3><strong>LISTA DE SETORES</strong></h3>
             <main>
                 <table class="blueTable" id="departamento-tabela">
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Nome do Setor</th>
+                            <th class="categoriaSetor">ID</th>
+                            <th class="categoriaSetor">Nome do Setor</th>
                         </tr>
                     </thead>
                     <tbody>
