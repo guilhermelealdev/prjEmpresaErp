@@ -27,5 +27,9 @@ public class DependenteServices {
 	public List<Dependente> listarDependentes() {
 		return dependenteRepository.findAll();
 	}
+	
+	public void deleteDependenteById(Long idDependente) {
+		dependenteRepository.deleteById(idDependente);
+	}
 
 }

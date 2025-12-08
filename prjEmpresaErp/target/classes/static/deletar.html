@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IANES - Deletar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="menu">
+        <h1><strong>IANES</strong></h1>
+    </div>
+
+    <div id="deco3"></div>
+
+    <div class="barraInicial">
+        <div class="opcao"><a href="index.html" class="w3-bar-item w3-button"><strong>HOME</strong></a></div>
+        <div class="opcao"><a href="departamento.html" class="w3-bar-item w3-button"><strong>SETOR</strong></a></div>
+        <div class="opcao"><a href="funcionario.html" class="w3-bar-item w3-button"><strong>FUNCIONARIO</strong></a></div>
+        <div class="opcao"><a href="dependente.html" class="w3-bar-item w3-button"><strong>DEPENDENTE</strong></a></div>
+    </div>
+    <br>
+
+    <div class="central">
+        <div id="cadastro">
+            <h2>DELETAR DEPENDENTE</h2>
+            <hr color="white">
+            <br>
+            <form id="cadastroForm">
+                <label for="idDependente"><strong>ID DO DEPENDENTE:</strong></label>
+                <input type="number" id="idDependente" name="idDependente"required>
+                <br><br>
+                <button class="botaoDependente" type="button" onclick="deletarDependente()"><strong>DELETAR</strong></button>
+
+             <br><br>
+            <h2>DELETAR FUNCIONARIO</h2>
+            <hr color="white">
+            <br>
+            <form id="cadastroForm">
+                <label for="idFuncionario"><strong>ID DO FUNCIONARIO:</strong></label>
+                <input type="number" id="idFuncionario" name="idFuncionario" required>
+                <br><br>
+                <button class="botaoDependente" type="button" onclick="deletarFuncionario()"><strong>DELETAR</strong></button>
+
+            <br><br>
+            <h2>DELETAR SETOR</h2>
+            <hr color="white">
+            <br>
+            <form id="cadastroForm">
+                <label for="idSetor"><strong>ID DO SETOR:</strong></label>
+                <input type="number" id="idSetor" name="idSetor" required>
+                <br><br>
+                <button class="botaoDependente" type="button" onclick="deletarSetor()"><strong>DELETAR</strong></button>
+                </form>
+            </form>
+        </form>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

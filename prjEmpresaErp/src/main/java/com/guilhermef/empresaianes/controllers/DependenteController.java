@@ -2,6 +2,7 @@ package com.guilhermef.empresaianes.controllers;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,14 +22,14 @@ public class DependenteController {
 	public DependenteController(DependenteServices dependenteService) {
 		this.dependenteService = dependenteService;
 	}
-	
-	// -> abra a pasta do seu projeto -> main -> resources -> static -> coloque seus arquivos -> fecha e abre denovo o spring -> m2 no prj -> refresh
+
+	// -> abra a pasta do seu projeto -> main -> resources -> static -> coloque seus
+	// arquivos -> fecha e abre denovo o spring -> m2 no prj -> refresh
 	@GetMapping("/home")
 	public String paginaInicial() {
-		return "index"; //Nome do seu arquivo HTML "index"
+		return "index"; // Nome do seu arquivo HTML "index"
 	}
-	
-	
+
 	@PostMapping("/salvar")
 	public Dependente criarDependente(@RequestBody Dependente dependente) {
 		return dependenteService.saveDependente(dependente);
@@ -42,6 +43,11 @@ public class DependenteController {
 	@GetMapping("/listar")
 	public List<Dependente> listarDependentes() {
 		return dependenteService.listarDependentes();
+	}
+
+	@DeleteMapping("/{idDependente}")
+	public void deleteDependenteById(@PathVariable Long idDependente) {
+		dependenteService.deleteDependenteById(idDependente);
 	}
 
 }

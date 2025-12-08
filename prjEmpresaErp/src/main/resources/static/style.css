@@ -124,6 +124,7 @@ h2 {
 
 #deco3 {
     position: sticky;
+    z-index: 1000;
     top: 0;
     padding: 1px 200px;
     background-color: rgb(139, 143, 255);
@@ -149,7 +150,9 @@ label {
 input {
     padding: 15px 90px;
     border-radius: 15px;
-
+}
+#labelFuncionario{
+    padding: 15px 30px;
 }
 
 h3 {
@@ -173,10 +176,17 @@ tr {
 }
 
 table {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 80%; 
+    margin: 20px auto;
+    border-collapse: collapse;
 }
+
+th, td {
+    border: 1px solid #000000;
+    padding: 12px;
+    color: black;
+}
+
 
 button {
     padding: 10px 54px;

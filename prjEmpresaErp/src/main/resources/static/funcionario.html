@@ -17,9 +17,10 @@
     <div id="deco3"></div>
 
     <div class="barraInicial">
-        <a href="index.html" class="opcao"><strong>HOME</strong></a>
-        <a href="departamento.html" class="opcao"><strong>SETOR</strong></a>
-        <a href="funcionario.html" class="opcao"><strong>FUNCIONARIO</strong></a>
+        <div class="opcao"><a href="index.html" class="w3-bar-item w3-button"><strong>HOME</strong></a></div>
+        <div class="opcao"><a href="departamento.html" class="w3-bar-item w3-button"><strong>SETOR</strong></a></div>
+        <div class="opcao"><a href="funcionario.html" class="w3-bar-item w3-button"><strong>FUNCIONARIO</strong></a></div>
+        <div class="opcao"><a href="dependente.html" class="w3-bar-item w3-button"><strong>DEPENDENTE</strong></a></div>
     </div>
 
     <br>
@@ -42,13 +43,14 @@
                 <input type="number" id="idSetor" name="idSetor" required>
                 <br><br>
 
-                <button type="button" onclick="cadastrarFuncionario()">CADASTRAR</button>
+                <button type="button" onclick="cadastrarFuncionario()"><strong>CADASTRAR</strong></button>
+                <button class="botaoDependente" type="button"><strong><a href="deletar.html">DELETAR</a></strong></button>
             </form>
             <br>
 
-            <h2><strong>BUSCAR FUNCIONÁRIO</strong></h2>
+            <h2><strong>LISTAR FUNCIONÁRIOS</strong></h2>
             <input type="text" id="searchNome" placeholder="Pesquisar por nome">
-            <button type="button" onclick="pesquisarFuncionario()">PESQUISAR</button>
+            <button type="button" onclick="listarFuncionarios()"><strong>LISTAR</strong></button>
 
             <h3><strong>LISTA DE FUNCIONÁRIOS</strong></h3>
             <table id="funcionarios-tabela" class="blueTable">

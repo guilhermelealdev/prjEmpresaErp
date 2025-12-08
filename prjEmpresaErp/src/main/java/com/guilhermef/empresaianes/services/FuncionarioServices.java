@@ -26,5 +26,9 @@ public class FuncionarioServices {
 	public List<Funcionario> listarFuncionarios() {
 		return funcionarioRepository.findAll();
 	}
+	
+	public void deleteFuncionarioById(Long idFuncionario) {
+		funcionarioRepository.deleteById(idFuncionario);
+	}
 
 }

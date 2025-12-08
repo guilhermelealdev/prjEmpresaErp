@@ -26,5 +26,9 @@ public class SetorService {
 	public List<Setor> listarSetores() {
 		return setorRepository.findAll();
 	}
+	
+	public void deletarSetorById(Long idSetor) {
+		setorRepository.deleteById(idSetor);
+	}
 
 }

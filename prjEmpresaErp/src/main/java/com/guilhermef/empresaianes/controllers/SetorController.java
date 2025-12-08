@@ -2,6 +2,7 @@ package com.guilhermef.empresaianes.controllers;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -35,6 +36,11 @@ public class SetorController {
 	@GetMapping("/listar")
 	public List<Setor> listarSetores() {
 		return setorService.listarSetores();
+	}
+	
+	@DeleteMapping("/{idSetor}")
+	public void deleteSetorById(@PathVariable Long idSetor) {
+		setorService.deletarSetorById(idSetor);
 	}
 
 }

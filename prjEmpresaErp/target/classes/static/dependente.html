@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IANES - Setores</title>
+    <title>IANES - Dependentes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -27,29 +27,33 @@
     <div class="central">
         <div id="cadastro">
 
-            <h2>CADASTRO DE SETOR</h2>
+            <h2>CADASTRO DE DEPENDENTE</h2>
             <hr color="white">
             <br>
 
             <form id="cadastroForm">
 
-                <label for="nomeSetor"><strong> NOME DO SETOR:</strong></label>
-                <input type="text" id="nomeSetor" name="nomeSetor" required class="nomeSetor">
+                <label for="nomeSetor"><strong> NOME DO DEPENDENTE:</strong></label>
+                <input type="text" id="nomeDependente" name="nomeDependente" required class="nomeDependente">
+                <br><br>
+                <label for="idFuncionario"><strong>ID DO FUNCIONARIO:</strong></label>
+                <input type="number" id="idFuncionario" name="idFuncionario" required>
                 <br><br>
 
-                <button class="botaoSetor" type="button" onclick="cadastrarSetores(event)"><strong>CADASTRAR</strong></button>
-                <button class="botaoSetor" type="button"><strong><a href="deletar.html">DELETAR</a></strong></button>
-                <button class="botaoSetor" type="button" onclick="listarSetores()"><strong>LISTAR</strong></button>
+                <button class="botaoDependente" type="button" onclick="cadastrarDependente()"><strong>CADASTRAR</strong></button>
+                <button class="botaoDependente" type="button" onclick="listarDependentes()"><strong>LISTAR</strong></button>
+                <button class="botaoDependente" type="button"><strong><a href="deletar.html">DELETAR</a></strong></button>
 
             </form>
 
-            <h3><strong>LISTA DE SETORES</strong></h3>
+            <h3><strong>LISTA DE DEPENDENTES</strong></h3>
             <main>
-                <table class="blueTable" id="setor-tabela">
+                <table class="blueTable" id="dependente-tabela">
                     <thead>
                         <tr>
-                            <th class="categoriaSetor">ID</th>
-                            <th class="categoriaSetor">Nome do Setor</th>
+                            <th class="categoriaDependente">ID</th>
+                            <th class="categoriaDependente">Nome do dependente</th>
+                            <th class="categoriaDependente">Nome do funcionario</th>
                         </tr>
                     </thead>
                     <tbody>
